@@ -1,10 +1,13 @@
 const defaultResult = 0;
-let currentResult = defaultResult; // camelCase
+let currentResult; // camelCase
 
-currentResult = ((currentResult + 10) * 3) / 2 - 1; // operations
+function add(a, b) {
+    const result = a + b;
+    return result;
+}
+
+currentResult = add(1, 2);
 
 let calculationDesciption = `( ${defaultResult}+ 10 ) * 3 / 2 - 1`;
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Escape_notation
-// let errorMessage = "An error \n occurred!";
 
 outputResult(currentResult, calculationDesciption);
